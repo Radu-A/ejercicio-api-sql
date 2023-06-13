@@ -18,7 +18,7 @@ const createEntry = async (req, res) => {
         console.log(dataEntry);
         const result = await entries.createEntry(dataEntry);
         res.status(201).json({
-            "items_created": result,
+            "Entrada creada": result,
             data: dataEntry
         })
     } catch (err) {
@@ -37,7 +37,7 @@ const updateEntry = async (req, res) => {
     console.log(dataEntry);
     const result = await entries.updateEntry(dataEntry);
     res.status(201).json({
-        "items_created": result,
+        "Entrada actualizada": result,
         data: dataEntry
     })
 }

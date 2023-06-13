@@ -23,7 +23,7 @@ const createAuthor = async (req, res) => {
         const result = await authors.createAuthor(dataAuthor);
         console.log(dataAuthor)
         res.status(201).json({
-            "usuario creado": dataAuthor.email,
+            "Usuario creado": dataAuthor.email,
             data: dataAuthor
         })
     } catch (err) {
@@ -38,7 +38,7 @@ const updateAuthor = async (req, res) => {
         const result = await authors.updateAuthor(dataAuthor);
         console.log(dataAuthor)
         res.status(201).json({
-            "usuario actualizado": dataAuthor.email,
+            "Usuario actualizado": dataAuthor.email,
             data: dataAuthor
         })
     } catch (err) {

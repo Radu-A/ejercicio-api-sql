@@ -2,6 +2,7 @@ const express = require('express');
 const entriesController = require('../controllers/entriesController');
 const entriesRouter = express.Router();
 
+// http://localhost:3000/api/entries
 entriesRouter.get('/', entriesController.getEntries);
 entriesRouter.post('/', entriesController.createEntry);
 entriesRouter.put('/', entriesController.createEntry);

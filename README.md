@@ -27,6 +27,8 @@ GET
 - Para obtener todos los autores: https://api-sql-mmm3.onrender.com/api/authors
 - Para obtener un autor por su email: https://api-sql-mmm3.onrender.com/api/authors?email=<author_email>
 
+---API_KEY---
+
 POST
 - Crear un nuevo autor: https://api-sql-mmm3.onrender.com/api/authors. En el body se incluirá:
 { 
@@ -70,8 +72,6 @@ DELETE
   "title": ""
 }
 
-
-
 ### Links
 
 - Repositorio: [ejercicio-api-sql](https://github.com/Radu-A/ejercicio-api-sql)
@@ -95,5 +95,6 @@ DELETE
 - Subdivisión de módulos propios para ordenar el código de la app
 - Enrutamiento y empleo de middlewares
 - Uso de morgan para visualizar logs
+- Checkeo de API_KEY en metodos POST, PUT y DELETE
 - Despliegue de la base de datos en ElephantSQL
 - Despliegue de la aplicación en Render

@@ -1,9 +1,8 @@
 
-const { json } = require('body-parser');
 const entries = require('../models/entries');
 
 
-const getEntries = async (req, res) => { 
+const getEntries = async (req, res) => {
     let result;
     if (req.query.email) {
         result = await entries.getEntriesByEmail(req.query.email);
